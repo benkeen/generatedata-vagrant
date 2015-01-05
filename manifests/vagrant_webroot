@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+  ServerName app.local
+  DocumentRoot /vagrant/webroot/generatedata
+  <Directory /vagrant/webroot/generatedata>
+    DirectoryIndex index.php index.html
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
